@@ -133,18 +133,7 @@ NSGC/
 | `train_bias_residual_v2.py` | Training pipeline for the correction module |
 | `test_bias_residual_v2.py` | Evaluation with standard SGG metrics |
 
-## Citation
 
-If you find this work useful, please cite:
-
-```bibtex
-@article{zhang2026nsgc,
-  title={Nonlinear Semantic-Geometric Residual Correction for Unbiased Scene Graph Generation},
-  author={Zhang, Hao and Li, Xudong and Wu, Lizhen and Liu, Anqi},
-  journal={IEEE Signal Processing Letters},
-  year={2026}
-}
-```
 
 ## Acknowledgement
 
