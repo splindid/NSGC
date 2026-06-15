@@ -4,12 +4,6 @@
 [![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-1.2+-orange)](https://pytorch.org/)
 
-This repository contains the official implementation of our paper:
-
-> **Nonlinear Semantic-Geometric Residual Correction for Unbiased Scene Graph Generation**  
-> Hao Zhang, Xudong Li, Lizhen Wu*, Anqi Liu  
-> *IEEE Signal Processing Letters*, 2026
-
 ## Overview
 
 Scene graph generation (SGG) models trained on long-tailed datasets tend to predict head-class relations while neglecting tail-class ones. We propose a **lightweight post-processing residual correction framework** that recalibrates the logits of pretrained SGG models without architectural modifications.
