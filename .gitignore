@@ -1,0 +1,123 @@
+# Compilation and distribution
+__pycache__/
+_ext/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+build/
+dist/
+*.egg
+
+# Datasets (too large, users download separately)
+datasets/
+
+# Pretrained model checkpoints
+MotifPredictor/
+VCTreePredictor/
+
+# Training/eval outputs
+output/
+cadc_output/
+cadc_test_output/
+cadc_battle_output/
+cadc_model/
+distribution_results/
+
+# GloVe embeddings (users download separately)
+glove.6B.*
+
+# Cache files
+*.cache
+cmd.cache
+*.pt
+*.pth
+*.pkl
+*.h5
+
+# Log files
+*.log
+
+# Generated images/data
+*.png
+*.jpg
+*.jpeg
+*.csv
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# IDE settings
+.idea/
+.vscode/
+.cursor/
+.claude/
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# cocoapi (separate dependency)
+cocoapi/
+
+# Other custom files in relation_head/ (not part of this release)
+maskrcnn_benchmark/modeling/roi_heads/relation_head/CorrectionAlgorithm_HB3C.py
+maskrcnn_benchmark/modeling/roi_heads/relation_head/CorrectionAlgorithm_V1.py
+maskrcnn_benchmark/modeling/roi_heads/relation_head/GeometricRelationRefiner.py
+
+# Experimental/one-off scripts (not part of main codebase)
+adaptive_gated_so_calibrator.py
+analyze_hb3c_dist.py
+check_features.py
+check_gt.py
+check_gt2.py
+check_metrics.py
+compare_postprocess_official_eval.py
+context_aware_logitadj.py
+copula_correction.py
+fast_copula_eval.py
+fast_train_hb3c.py
+find_image_mapping.py
+official_offline_eval.py
+plot_predicate_comparison.py
+regions_gmm.py
+run_gmm_projection.py
+test_soft_vs_hard_correction.py
+train_bias_residual_relation.py
+train_debug.py
+train_hb3c_neural.py
+view_pred_dist.py
+visualize_comparison.py
+visualize_from_eval_results.py
+visualize_paper_style.py
+visualize_sgcls.py
+visualize_sgcls_simple.py
+
+# Personal notes/docs (not official documentation)
+CADC_README.md
+SOFT_CORRECTION_README.md
+SERVER_RUN_GUIDE.md
+README_SERVER_QUICK.md
+FIX_MODULE_ERROR.md
+PROBLEM_SOLVED.md
+FIX_PATH_ORDER.md
+FIX_LOCAL_RANK.md
+VISUALIZATION_GUIDE.md
+GQA.txt
+
+# Shell/batch/upload scripts (root level only)
+/*.bat
+/*.ps1
+/*.sh
+/upload_commands.txt
+
+# Misc config files for my experiments
+configs/my_config.yaml
+configs/vg_mini.yaml
+configs/gqa_mini.yaml

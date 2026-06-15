@@ -1,0 +1,41 @@
+# ============================================
+# 服务器运行最小文件清单
+# ============================================
+
+## 1️⃣ 必需的代码文件（整个项目目录）
+Scene-Graph-Benchmark.pytorch-master/
+├── maskrcnn_benchmark/          # 核心代码
+├── tools/                        # 训练和测试脚本
+├── configs/                      # 配置文件
+├── setup.py                      # 安装脚本
+├── requirements.txt              # 依赖列表
+└── 你修改的自定义文件（如 my_DataStatistic.py, GeometricRelationRefiner.py）
+
+## 2️⃣ 配置文件
+configs/e2e_relation_X_101_32_8_FPN_1x.yaml  # 或者你使用的配置
+
+## 3️⃣ GloVe 词向量（约1GB）
+glove.6B.200d.pt  # 已处理的PyTorch版本
+# 或者 glove.6B.200d.txt（原始文本，会自动转换）
+
+## 4️⃣ 预训练模型权重
+VCTreePredictor/VCTreePredictor/PredCls/model_best.pth  # 如果需要测试
+
+## 5️⃣ 数据集（需要在服务器准备）
+datasets/vg/
+├── VG-SGG-with-attri.h5        # VG数据集（约2GB）
+├── VG-SGG-dicts-with-attri.json
+└── image_data.json
+
+## ============================================
+## 不需要上传（可在服务器生成）
+## ============================================
+- build/                  # 编译缓存
+- __pycache__/            # Python缓存
+- *.pyc                   # 字节码
+- output/                 # 输出结果
+- .git/                   # Git历史（如果很大）
+
+## ============================================
+## 压缩打包命令（排除不必要文件）
+## ============================================
