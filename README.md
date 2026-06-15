@@ -20,9 +20,6 @@ Our method:
 - Achieves **up to 138% mean-recall improvement** while maintaining competitive R@K
 - Is **plug-and-play**: applicable to any logit-producing baseline (Motifs, VCTree, Transformer, etc.)
 
-<p align="center">
-  <img src="docs/framework.png" width="90%">
-</p>
 
 ## Main Results
 
